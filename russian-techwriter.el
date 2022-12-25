@@ -1,40 +1,24 @@
-;;; russian-techwriter.el --- Метод ввода для технических писателей
-
-;; Copyright (C) 1997-1998, 2001-2020 Free Software Foundation, Inc.
-;; Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-;;   2006, 2007, 2008, 2009, 2010, 2011, 2022
-
-;; Author: Maxim Dunaevskii <dunmaksim@yandex.ru>
-;; URL: https://github.com/dunmaksim/emacs-russian-techwriter-input-method
-;; Package-Version: 20221215
-;; Maintainer: Maxim Dunaevskii
-;; Keywords: multilingual, input method, Cyrillic, i18n
-
-;; This file is not a part of GNU Emacs.
-
-;; This program is free software; you can redistribute it and/or modify
-;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation; either version 2, or (at your option)
-;; any later version.
-;;
-;; This program is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;; GNU General Public License for more details.
-;;
-;; You should have received a copy of the GNU General Public License
-;; along with this program; see the file COPYING.  If not, write to
-;; the Free Software Foundation, Inc., 51 Franklin Street, Fifth
-;; Floor, Boston, MA 02110-1301, USA.
-
-  ;;; Commentary:
+;;; russian-techwriter.el --- Input method for russians technical writers
 
 ;; This input method based on GNU EMACS russian-computer input method
 
-  ;;; Code:
+;; Author: Maxim Dunaevskii <dunmaksim@yandex.ru>
+;; URL: https://github.com/dunmaksim/emacs-russian-techwriter-input-method
+;; Maintainer: Maxim Dunaevskii
+;; Keywords: multilingual, input method, Cyrillic, i18n
+;; Version: 0.0.2
 
-(defconst russian-techwriter-version "0.0.1"
-  "russian-techwriter input method version.
+;;; Commentary:
+
+;; This file is not a part of GNU Emacs.
+;;
+;; This input method optimized for fast text input with inserting some
+;; characters without using (insert-char) function.
+
+;;; Code:
+
+(defconst russian-techwriter-version "0.0.2"
+  "Input method for russian technical writers.
 
 Based on GNU EMACS russian-computer input method")
 
@@ -43,7 +27,7 @@ Based on GNU EMACS russian-computer input method")
 ;; Метод ввода для технических писателей
 (quail-define-package
  "russian-techwriter" "Russian" "RUT" nil
- "ЙЦУКЕН Russian techwriter layout"
+ "ЙЦУКЕН Russian layout for technical writers"
  nil t t t t nil nil nil nil nil t)
 
 ;;  1! 2" 3№ 4; 5% 6: 7? 8* 9( 0) -_ =+ \/ ёЁ
@@ -231,10 +215,10 @@ Based on GNU EMACS russian-computer input method")
  "RUTW" "ЙЦУКЕН Russian techwriter layout."
  "quail/cyrillic")
 
-(provide 'russian-techwriter)
-
 ;; Local Variables:
 ;; coding: utf-8
 ;; End:
 
-  ;;; russian-techwriter.el ends here
+(provide 'russian-techwriter)
+
+;;; russian-techwriter.el ends here
