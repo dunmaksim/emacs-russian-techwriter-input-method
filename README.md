@@ -1,122 +1,122 @@
-# Метод ввода GNU EMACS для технических писателей
+# GNU Emacs input method for technical writers
 
-## Установка
+## Installing
 
-1. Установите пакет:
+1. Add to `init.el`:
 
     ```emacs-lisp
     (use-package 'russian-techwriter-input-method)
     ```
 
-1. Сделайте `russian-techwriter` методом ввода по умолчанию:
+1. Set the `russian-techwriter` default input method:
 
     ```emacs-lisp
     (setq-default default-input-method 'russian-techwriter)
     ```
 
-1. Для использования метода включите его нажатием клавиш `[C-\]`.
+1. Change input method with **[C-\]** keybinding.
 
-## Использование
+## Using
 
-В отличие от метода ввода `russian-computer`, входящего в стандартную поставку EMACS, этот пакет предоставляет поддержку лигатур. Список поддерживаемых лигатур представлен ниже. Для вставки лигатуры необходимо нажать клавишу `[/]` (справа от `[ю]`), после чего ввести нужную последовательность символов.
+Unlike the `russian-computer` input method included in the standard Emacs package, this package provides support for ligatures. The list of supported ligatures is present below. To insert a ligature press the `[/]` key (to the right of `[ю]`), the enter the desired sequence of characters.
 
-## Лигатуры
+## Ligatures
 
-### Тире
+### Dash
 
-| Последовательность | Символ замены | Описание    |
-|:------------------:|:-------------:|-------------|
-| `[/-]`             | –             | EN DASH     |
-| `[/--]`            | ‒             | FIGURE DASH |
-| `[/---]`           | —             | EM DASH     |
+| Sequence | Replace char | Description |
+|:--------:|:------------:|-------------|
+| `[/-]`   | –            | EN DASH     |
+| `[/--]`  | ‒            | FIGURE DASH |
+| `[/---]` | —            | EM DASH     |
 
-### Кавычки
+### Quotation marks
 
-| Последовательность | Символ замены | Описание                                   |
-|:------------------:|:-------------:|--------------------------------------------|
-| `[/,,]`            | „             | DOUBLE LOW-9 QUOTATION MARK                |
-| `[/,]`             | ‚             | SINGLE LOW-9 QUOTATION MARK                |
-| `[/``]`            | ‘             | LEFT SINGLE QUOTATION MARK                 |
-| `[/']`             | ’             | RIGHT SINGLE QUOTATION MARK                |
-| `[/``]`            | “             | LEFT DOUBLE QUOTATION MARK                 |
-| `[/'']`            | ”             | RIGHT DOUBLE QUOTATION MARK                |
-| `[/<<]`            | «             | LEFT-POINTING DOUBLE ANGLE QUOTATION MARK  |
-| `[/>>]`            | »             | RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK |
+| Sequence | Replace char | Description                                |
+|:--------:|:------------:|--------------------------------------------|
+| `[/,,]`  | „            | DOUBLE LOW-9 QUOTATION MARK                |
+| `[/,]`   | ‚            | SINGLE LOW-9 QUOTATION MARK                |
+| `[/``]`  | ‘            | LEFT SINGLE QUOTATION MARK                 |
+| `[/']`   | ’            | RIGHT SINGLE QUOTATION MARK                |
+| `[/``]`  | “            | LEFT DOUBLE QUOTATION MARK                 |
+| `[/'']`  | ”            | RIGHT DOUBLE QUOTATION MARK                |
+| `[/<<]`  | «            | LEFT-POINTING DOUBLE ANGLE QUOTATION MARK  |
+| `[/>>]`  | »            | RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK |
 
-### Точки и пули
+### Points and bullets
 
-| Последовательность | Символ замены | Описание                            |
-|:------------------:|:-------------:|-------------------------------------|
-| `[/*]`             | •             | Пуля                                |
-| `[/.]`             | ․             | Точка                               |
-| `[/..]`            | ‥             | Двоточие                            |
-| `[/...]`           | …             | Многоточие                          |
+| Sequence | Replace char | Description                         |
+|:--------:|:------------:|------------------------------------|
+| `[/*]`   | •            | Bullet                                |
+| `[/.]`   | ․            | Point                               |
+| `[/..]`  | ‥            | Двоточие                            |
+| `[/...]` | …            | Многоточие                          |
 
-### Номера и параграфы
+### Numbers and paragraphs
 
-| Последовательность | Символ замены | Описание                            |
-|:------------------:|:-------------:|-------------------------------------|
-| `[/&]`             | §             | Параграф                            |
-| `[/#]`             | №             | Номер                               |
-| `[/no]`            | №             | - // -                              |
+| Sequence | Replace char | Description |
+|:--------:|:------------:|-------------|
+| `[/&]`   | §            | Paragraph   |
+| `[/#]`   | №            | Number      |
+| `[/no]`  | №            | Number      |
 
-### Валюты и товарные символы
+### Vallets and trademarks
 
-| Последовательность | Символ замены | Описание         |
+| Sequence | Replace char | Description         |
 |:------------------:|:-------------:|------------------|
 | `[/c]`             | ©             | Copyright        |
 | `[/tm]`            | ™             | Trademark        |
 | `[/reg]`           | ®             | Reserved         |
 | `[/eu]`            | €             | Euro             |
-| `[/ru]`            | ₽             | Российский рубль |
+| `[/ru]`            | ₽             | Russian rouble   |
 | `[/ce]`            | ¢             | Cent             |
-| `[/te]`            | ₸             | Казахский теньге |
+| `[/te]`            | ₸             | Kazakhstan tenge |
 
-### Дроби
+### Fractions
 
-| Последовательность | Символ замены |
-|:------------------:|:-------------:|
-| `[/78]`            | ⅞             |
-| `[/58]`            | ⅝             |
-| `[/38]`            | ⅜             |
-| `[/18]`            | ⅛             |
-| `[/56]`            | ⅚             |
-| `[/16]`            | ⅙             |
-| `[/45]`            | ⅘             |
-| `[/35]`            | ⅗             |
-| `[/25]`            | ⅖             |
-| `[/15]`            | ⅕             |
-| `[/23]`            | ⅔             |
-| `[/13]`            | ⅓             |
-| `[/34]`            | ¾             |
-| `[/12]`            | ½             |
-| `[/14]`            | ¼             |
+| Sequence | Replace char |
+|:--------:|:------------:|
+| `[/78]`  | ⅞           |
+| `[/58]`  | ⅝           |
+| `[/38]`  | ⅜           |
+| `[/18]`  | ⅛           |
+| `[/56]`  | ⅚           |
+| `[/16]`  | ⅙           |
+| `[/45]`  | ⅘           |
+| `[/35]`  | ⅗           |
+| `[/25]`  | ⅖           |
+| `[/15]`  | ⅕           |
+| `[/23]`  | ⅔           |
+| `[/13]`  | ⅓           |
+| `[/34]`  | ¾            |
+| `[/12]`  | ½            |
+| `[/14]`  | ¼            |
 
-### Римские цифры
+### Romanian numbers
 
-| Последовательность | Символ замены |
-|:------------------:|:-------------:|
-| `[/RI]`            | Ⅰ             |
-| `[/RII]`           | Ⅱ             |
-| `[/RIII]`          | Ⅲ             |
-| `[/RIV]`           | Ⅳ             |
-| `[/RV]`            | Ⅴ             |
-| `[/RVI]`           | Ⅵ             |
-| `[/RVII]`          | Ⅶ             |
-| `[/RVIII]`         | Ⅷ             |
-| `[/RIX]`           | Ⅸ             |
-| `[/RX]`            | Ⅹ             |
-| `[/RXI]`           | Ⅺ             |
-| `[/RXII]`          | Ⅻ             |
-| `[/ri]`            | ⅰ             |
-| `[/rii]`           | ⅱ             |
-| `[/riii]`          | ⅲ             |
-| `[/riv]`           | ⅳ             |
-| `[/rv]`            | ⅴ             |
-| `[/rvi]`           | ⅵ             |
-| `[/rvii]`          | ⅶ             |
-| `[/rviii]`         | ⅷ             |
-| `[/rix]`           | ⅸ             |
-| `[/rx]`            | ⅹ             |
-| `[/rxi]`           | ⅺ             |
-| `[/rxii]`          | ⅻ             |
+| Sequence  | Replace char |
+|:---------:|:------------:|
+| `[/RI]`   | Ⅰ            |
+| `[/RII]`  | Ⅱ            |
+| `[/RIII]` | Ⅲ            |
+| `[/RIV]`  | Ⅳ            |
+| `[/RV]`   | Ⅴ            |
+| `[/RVI]`  | Ⅵ            |
+| `[/RVII]` | Ⅶ            |
+| `[/RVIII]`| Ⅷ            |
+| `[/RIX]`  | Ⅸ            |
+| `[/RX]`   | Ⅹ            |
+| `[/RXI]`  | Ⅺ            |
+| `[/RXII]` | Ⅻ            |
+| `[/ri]`   | ⅰ            |
+| `[/rii]`  | ⅱ            |
+| `[/riii]` | ⅲ            |
+| `[/riv]`  | ⅳ            |
+| `[/rv]`   | ⅴ            |
+| `[/rvi]`  | ⅵ            |
+| `[/rvii]` | ⅶ            |
+| `[/rviii]`| ⅷ            |
+| `[/rix]`  | ⅸ            |
+| `[/rx]`   | ⅹ            |
+| `[/rxi]`  | ⅺ            |
+| `[/rxii]` | ⅻ            |
