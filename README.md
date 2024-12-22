@@ -5,16 +5,12 @@
 1. Add to `init.el`:
 
     ```emacs-lisp
-    (use-package 'russian-techwriter-input-method)
-    ```
+    (use-package russian-techwriter-input-method
+      :ensure t
+      :custom
+      (default-input-method 'russian-techwriter))
 
-1. Set the `russian-techwriter` default input method:
-
-    ```emacs-lisp
-    (setq-default default-input-method 'russian-techwriter)
-    ```
-
-1. Change input method with **[C-\]** keybinding.
+1. Toggle input method with **[C-\\]** keybinding.
 
 ## Using
 
