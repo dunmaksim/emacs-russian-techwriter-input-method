@@ -1,4 +1,4 @@
-;;; russian-techwriter.el --- Input methods for Russian technical writers
+;;; russian-techwriter.el --- Input methods for Russian technical writers -*- lexical-binding: t; -*-
 
 ;; This input method based on GNU EMACS russian-computer input method
 
@@ -35,7 +35,7 @@
 
 (require 'quail)
 
-(defconst russian-techwriter-version "0.0.2"
+(defconst russian-techwriter-version "1.0.1"
   "Input method for russian technical writers.
 
 Based on GNU EMACS russian-computer input method")
@@ -228,7 +228,7 @@ Based on GNU EMACS russian-computer input method")
 
 (register-input-method
  "russian-techwriter" "Russian" 'quail-use-package
- "RUTW" "ЙЦУКЕН Russian techwriter layout."
+ "RTW" "ЙЦУКЕН Russian techwriter layout."
  "quail/cyrillic")
 
 ;; Local Variables:

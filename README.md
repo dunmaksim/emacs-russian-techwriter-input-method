@@ -41,12 +41,12 @@ Unlike the `russian-computer` input method included in the standard Emacs packag
 
 ### Points and bullets
 
-| Sequence | Replace char | Description                         |
-|:--------:|:------------:|------------------------------------|
-| `[/*]`   | •            | Bullet                                |
-| `[/.]`   | ․            | Point                               |
-| `[/..]`  | ‥            | Двоточие                            |
-| `[/...]` | …            | Многоточие                          |
+| Sequence | Replace char | Description |
+|:--------:|:------------:|-------------|
+| `[/*]`   | •            | Bullet      |
+| `[/.]`   | ․             | Point       |
+| `[/..]`  | ‥            | Двоточие    |
+| `[/...]` | …            | Многоточие  |
 
 ### Numbers and paragraphs
 
@@ -58,15 +58,15 @@ Unlike the `russian-computer` input method included in the standard Emacs packag
 
 ### Vallets and trademarks
 
-| Sequence | Replace char | Description         |
-|:------------------:|:-------------:|------------------|
-| `[/c]`             | ©             | Copyright        |
-| `[/tm]`            | ™             | Trademark        |
-| `[/reg]`           | ®             | Reserved         |
-| `[/eu]`            | €             | Euro             |
-| `[/ru]`            | ₽             | Russian rouble   |
-| `[/ce]`            | ¢             | Cent             |
-| `[/te]`            | ₸             | Kazakhstan tenge |
+| Sequence | Replace char | Description      |
+|:--------:|:------------:|------------------|
+| `[/c]`   | ©            | Copyright        |
+| `[/tm]`  | ™            | Trademark        |
+| `[/reg]` | ®            | Reserved         |
+| `[/eu]`  | €            | Euro             |
+| `[/ru]`  | ₽            | Russian rouble   |
+| `[/ce]`  | ¢            | Cent             |
+| `[/te]`  | ₸            | Kazakhstan tenge |
 
 ### Fractions
 
@@ -90,29 +90,29 @@ Unlike the `russian-computer` input method included in the standard Emacs packag
 
 ### Romanian numbers
 
-| Sequence  | Replace char |
-|:---------:|:------------:|
-| `[/RI]`   | Ⅰ            |
-| `[/RII]`  | Ⅱ            |
-| `[/RIII]` | Ⅲ            |
-| `[/RIV]`  | Ⅳ            |
-| `[/RV]`   | Ⅴ            |
-| `[/RVI]`  | Ⅵ            |
-| `[/RVII]` | Ⅶ            |
-| `[/RVIII]`| Ⅷ            |
-| `[/RIX]`  | Ⅸ            |
-| `[/RX]`   | Ⅹ            |
-| `[/RXI]`  | Ⅺ            |
-| `[/RXII]` | Ⅻ            |
-| `[/ri]`   | ⅰ            |
-| `[/rii]`  | ⅱ            |
-| `[/riii]` | ⅲ            |
-| `[/riv]`  | ⅳ            |
-| `[/rv]`   | ⅴ            |
-| `[/rvi]`  | ⅵ            |
-| `[/rvii]` | ⅶ            |
-| `[/rviii]`| ⅷ            |
-| `[/rix]`  | ⅸ            |
-| `[/rx]`   | ⅹ            |
-| `[/rxi]`  | ⅺ            |
-| `[/rxii]` | ⅻ            |
+| Sequence   | Replace char |
+|:----------:|:------------:|
+| `[/RI]`    | Ⅰ            |
+| `[/RII]`   | Ⅱ            |
+| `[/RIII]`  | Ⅲ            |
+| `[/RIV]`   | Ⅳ            |
+| `[/RV]`    | Ⅴ            |
+| `[/RVI]`   | Ⅵ            |
+| `[/RVII]`  | Ⅶ            |
+| `[/RVIII]` | Ⅷ            |
+| `[/RIX]`   | Ⅸ            |
+| `[/RX]`    | Ⅹ            |
+| `[/RXI]`   | Ⅺ            |
+| `[/RXII]`  | Ⅻ            |
+| `[/ri]`    | ⅰ            |
+| `[/rii]`   | ⅱ            |
+| `[/riii]`  | ⅲ            |
+| `[/riv]`   | ⅳ            |
+| `[/rv]`    | ⅴ            |
+| `[/rvi]`   | ⅵ            |
+| `[/rvii]`  | ⅶ            |
+| `[/rviii]` | ⅷ            |
+| `[/rix]`   | ⅸ            |
+| `[/rx]`    | ⅹ            |
+| `[/rxi]`   | ⅺ            |
+| `[/rxii]`  | ⅻ            |
