@@ -1,8 +1,6 @@
 #+title: GNU Emacs input method for technical writers
 
-#+html: <p align="center">
-#+html: <a href="https://melpa.org/#/russian-techwriter"><img alt="MELPA" src="https://melpa.org/packages/russian-techwriter-badge.svg"></a>
-#+html: </p>
+[[https://melpa.org/#/russian-techwriter][file:https://melpa.org/packages/russian-techwriter-badge.svg]]
 
 Unlike the =russian-computer= input method included in the standard Emacs package, this package provides support for ligatures. The list of supported ligatures is present below. To insert a ligature press the =/= key (to the right of =ю=), the enter the desired sequence of characters.
 

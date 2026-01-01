@@ -1,8 +1,6 @@
 #+title: Метод ввода GNU Emacs для технических писателей
 
-#+html: <p align="center">
-#+html: <a href="https://melpa.org/#/russian-techwriter"><img alt="MELPA" src="https://melpa.org/packages/russian-techwriter-badge.svg"></a>
-#+html: </p>
+[[https://melpa.org/#/russian-techwriter][file:https://melpa.org/packages/russian-techwriter-badge.svg]]
 
 В отличие от метода ввода =russian-computer=, входящего в состав Emacs, этот пакет предоставляет лигатуры. Список поддерживаемых лигатур приведён ниже. Для вставки лигатуры нажмите клавишу =/= (справа от =ю=), после чего введите последовательность знаков.
 
