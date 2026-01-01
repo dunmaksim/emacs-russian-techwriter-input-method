@@ -6,16 +6,16 @@
 
 ** Установка
 
-*** Добавьте в =init.el=:
+1. Добавьте в =init.el=:
 
-#+begin_src emacs-lisp
-(use-package russian-techwriter-input-method
-  :ensure t
-  :custom
-  (default-input-method 'russian-techwriter))
-#+end_src
+  #+begin_src emacs-lisp
+  (use-package russian-techwriter-input-method
+    :ensure t
+    :custom
+    (default-input-method 'russian-techwriter))
+  #+end_src
 
-*** Переключите метод ввода с помощью =C-\=.
+2. Переключите метод ввода с помощью =C-\=.
 
 ** Использование
 

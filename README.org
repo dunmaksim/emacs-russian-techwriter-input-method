@@ -6,16 +6,16 @@ Unlike the =russian-computer= input method included in the standard Emacs packag
 
 ** Installing
 
-*** Add to =init.el=:
+1. Add to =init.el=:
 
-#+begin_src emacs-lisp
-(use-package russian-techwriter-input-method
-  :ensure t
-  :custom
-  (default-input-method 'russian-techwriter))
-#+end_src
+  #+begin_src emacs-lisp
+  (use-package russian-techwriter-input-method
+    :ensure t
+    :custom
+    (default-input-method 'russian-techwriter))
+  #+end_src
 
-*** Toggle input method with =C-\= keybinding.
+2. Toggle input method with =C-\= keybinding.
 
 ** Using
 
